@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/techtrain-ssr/static/css/main.0ca08465.css",
-    "main.js": "/techtrain-ssr/static/js/main.f3b1e9e2.js",
+    "main.js": "/techtrain-ssr/static/js/main.6e190c82.js",
     "static/js/787.97a430ce.chunk.js": "/techtrain-ssr/static/js/787.97a430ce.chunk.js",
     "index.html": "/techtrain-ssr/index.html",
     "main.0ca08465.css.map": "/techtrain-ssr/static/css/main.0ca08465.css.map",
-    "main.f3b1e9e2.js.map": "/techtrain-ssr/static/js/main.f3b1e9e2.js.map",
+    "main.6e190c82.js.map": "/techtrain-ssr/static/js/main.6e190c82.js.map",
     "787.97a430ce.chunk.js.map": "/techtrain-ssr/static/js/787.97a430ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ca08465.css",
-    "static/js/main.f3b1e9e2.js"
+    "static/js/main.6e190c82.js"
   ]
 }
