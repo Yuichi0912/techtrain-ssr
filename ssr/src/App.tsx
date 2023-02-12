@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import Card from "@mui/material/Card";
@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 export const App = () => {
   const name: string = "森 祐一";
   const profile: string = "実務未経験ですが頑張ります!";
-
+  console.log("ビルド確認");
   return (
     <div>
       <main>
