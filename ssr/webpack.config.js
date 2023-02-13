@@ -35,9 +35,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          {
-            loader: "style-loader",
-          },
+          
           {
             loader: "css-loader",
           },
@@ -46,21 +44,25 @@ module.exports = {
           },
         ],
       },
-      // {
-      //   test: /\.m?js$/,
-      //   exclude: /node_modules/,
-      //   use: [
-      //     {
-      //       loader: "babel-loader",
-      //       options: {
-      //         presets: [
-      //           // プリセットを指定することで、ES2021 を ES5 に変換
-      //           "@babel/preset-env",
-      //         ],
-      //       },
-      //     },
-      //   ],
-      // },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                //   // プリセットを指定することで、ES2021 を ES5 に変換
+                "@babel/preset-env",
+                "@babel/preset-react",
+              ],
+            },
+          },
+          // {
+          //   loader: "ts-loader",
+          // },
+        ],
+      },
     ],
   },
   // 開発サーバーを立ち上げるプロパティ
@@ -77,7 +79,15 @@ module.exports = {
   //   },
   // },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".json"],
+    extensions: [".ts", ".tsx", ".js", ".json",".scss"],
   },
   target: "node",
+
+  ignoreWarnings: [
+    {
+      // module: /log4js/,
+      message:
+        /Critical dependency: the request of a dependency is an expression/,
+    },
+  ],
 };

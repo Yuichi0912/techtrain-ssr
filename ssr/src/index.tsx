@@ -1,9 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+// import React from "react";
+// import ReactDOM from "react-dom/client";
 import "./index.scss";
 import { App } from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { hydrateRoot } from "react-dom/client";
+// import ReactDOM from "react-dom";
+
 // const root = ReactDOM.createRoot(
 //   document.getElementById("root") as HTMLElement
 // );
@@ -13,6 +15,10 @@ import { hydrateRoot } from "react-dom/client";
 //   </React.StrictMode>
 // );
 
+// react v17
+// ReactDOM.hydrate(<App />, document.getElementById("root") as HTMLElement);
+
+// react v18
 const container = document.getElementById("root") as HTMLElement;
 hydrateRoot(container, <App />);
 
